@@ -1,23 +1,4 @@
  function [X, Y, iter] = MSBMF(M, D, R, lambda1, lambda2, lambda3, k, tol1, tol2, maxiter)
-% MSBMF: Drug repositioning based on multi-similarity bilinear matrix factorization.
-% Usage: [X, Y, iter] = MSBMF(M, D, R, lambda1, lambda2, lambda3, k, tol1, tol2, maxiter)
-%
-% Inputs:
-%        M                  - the target matrix with only known entries and the unobserved entries are 0.
-%        D                  - disease similarity matrix
-%        R                  - drug similarity matrix
-%        lambda1,2,3        - parameters needed to give.
-%        k                  - the latent dimension of matrix factorization.
-%        tol1, tol2         - tolerance of termination conditions.
-%        maxiter            - maximum number of iterations.
-%
-% Outputs:
-%        X, Y               - two latent low-rank matrices of the completed matrix.
-%        iter               - the number of iterations.
-%
-% Written by: Mengyun Yang
-% Email: mengyunyang@csu.edu.cn
-% Created: December 16, 2019
 
 rand('state', 2019); % fix random seed
 omega = double(M ~= 0);
