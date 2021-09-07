@@ -1,1 +1,3 @@
 # MSBMFHMDA
+We proposed Multi-Similarities Bilinear Matrix Factorization for predicting Human Microbe-Disease Associations.
+In MSBMFHMDA, a microbe multiple similarities matrix was constructed first based on the Gaussian interaction profile kernel similarity and cosine similarity for microbes. Then, we use the Gaussian interaction profile kernel similarity, cosine similarity and symptom similarity for diseases to compose the disease multiple similarities matrix. Finally, we integrate these two similarity matrices and the microbe-disease association matrix into our model to predict potential associations.
